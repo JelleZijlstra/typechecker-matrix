@@ -18,6 +18,12 @@ from .core import (
 )
 
 
+def _report_paths(results_dir: Path, suites: list[str]) -> tuple[Path, Path]:
+    suite = suites[0] if len(suites) == 1 else "all"
+    base = results_dir / "suites" / suite
+    return base / "summary.md", base / "detailed.md"
+
+
 def _slugify(raw: str) -> str:
     slug = re.sub(r"[^a-zA-Z0-9]+", "-", raw.strip().lower()).strip("-")
     if not slug:
@@ -75,8 +81,16 @@ def cmd_summarize(args: argparse.Namespace) -> int:
     markdown = summarize(run_data)
     detailed_markdown = summarize_detailed(run_data)
 
-    out_path = Path(args.output)
-    detailed_out_path = Path(args.detailed_output)
+    if args.output is None and args.detailed_output is None:
+        out_path, detailed_out_path = _report_paths(
+            results_dir=Path(args.results_dir), suites=run_data.get("suites", [])
+        )
+    else:
+        out_path = Path(args.output) if args.output else Path("results/summary.md")
+        detailed_out_path = (
+            Path(args.detailed_output) if args.detailed_output else Path("results/detailed.md")
+        )
+
     write_summary(markdown, out_path)
     write_summary(detailed_markdown, detailed_out_path)
     print(f"Wrote summary: {out_path}")
@@ -88,15 +102,41 @@ def cmd_summarize(args: argparse.Namespace) -> int:
 
 
 def cmd_all(args: argparse.Namespace) -> int:
-    cmd_run(args)
-    summarize_args = argparse.Namespace(
-        run_file=None,
-        results_dir=args.results_dir,
-        output=args.output,
-        detailed_output=args.detailed_output,
-        print=args.print,
-    )
-    return cmd_summarize(summarize_args)
+    if args.suite:
+        cmd_run(args)
+        summarize_args = argparse.Namespace(
+            run_file=None,
+            results_dir=args.results_dir,
+            output=args.output,
+            detailed_output=args.detailed_output,
+            print=args.print,
+        )
+        return cmd_summarize(summarize_args)
+
+    suites = discover_suites(Path(args.samples_dir))
+    if not suites:
+        raise ValueError(f"No suites found in {args.samples_dir}")
+
+    for suite in suites:
+        run_args = argparse.Namespace(
+            config=args.config,
+            samples_dir=args.samples_dir,
+            results_dir=args.results_dir,
+            suite=suite,
+            timeout=args.timeout,
+        )
+        cmd_run(run_args)
+        summary_path, detailed_path = _report_paths(Path(args.results_dir), [suite])
+        summarize_args = argparse.Namespace(
+            run_file=None,
+            results_dir=args.results_dir,
+            output=str(summary_path),
+            detailed_output=str(detailed_path),
+            print=args.print,
+        )
+        cmd_summarize(summarize_args)
+
+    return 0
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -136,11 +176,15 @@ def build_parser() -> argparse.ArgumentParser:
 
     summ = sub.add_parser("summarize", help="Render a markdown summary table")
     summ.add_argument("--run-file", default=None, help="Specific run file; defaults to latest")
-    summ.add_argument("--output", default="results/summary.md", help="Output markdown path")
+    summ.add_argument(
+        "--output",
+        default=None,
+        help="Output markdown path (default: results/suites/<suite>/summary.md)",
+    )
     summ.add_argument(
         "--detailed-output",
-        default="results/detailed.md",
-        help="Detailed markdown output path",
+        default=None,
+        help="Detailed markdown output path (default: results/suites/<suite>/detailed.md)",
     )
     summ.add_argument("--print", action="store_true", help="Print markdown to stdout")
     summ.set_defaults(func=cmd_summarize)
@@ -148,11 +192,15 @@ def build_parser() -> argparse.ArgumentParser:
     all_cmd = sub.add_parser("all", help="Run and summarize in one command")
     all_cmd.add_argument("--suite", default=None, help="Optional suite name to run only that suite")
     all_cmd.add_argument("--timeout", type=int, default=30, help="Per-checker timeout in seconds")
-    all_cmd.add_argument("--output", default="results/summary.md", help="Output markdown path")
+    all_cmd.add_argument(
+        "--output",
+        default=None,
+        help="Output markdown path when running one suite",
+    )
     all_cmd.add_argument(
         "--detailed-output",
-        default="results/detailed.md",
-        help="Detailed markdown output path",
+        default=None,
+        help="Detailed markdown output path when running one suite",
     )
     all_cmd.add_argument("--print", action="store_true", help="Print markdown to stdout")
     all_cmd.set_defaults(func=cmd_all)

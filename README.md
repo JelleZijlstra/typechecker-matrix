@@ -14,8 +14,8 @@ This project builds a comparison matrix for Python type checkers (`mypy`, `pyrig
 - `typecheckers.toml`: checker command definitions
 - `samples/<suite>/<sample>/`: suite-grouped samples (`sample.toml` + `sample.py`)
 - `results/run-*.json`: raw run output
-- `results/summary.md`: rendered table
-- `results/detailed.md`: per-sample detailed output report
+- `results/suites/<suite>/summary.md`: rendered table
+- `results/suites/<suite>/detailed.md`: per-sample detailed output report
 - `run_matrix.py`: CLI entrypoint
 
 ## Usage
@@ -52,6 +52,7 @@ Current starter suites:
 
 - `literals`
 - `sys-platform`
+- `sys-version-info`
 
 ### 3) Run all checkers on all samples
 
@@ -80,10 +81,10 @@ Or one suite only:
 ### 4) Generate summary table
 
 ```bash
-./run_matrix.py summarize --output results/summary.md --print
+./run_matrix.py summarize --print
 ```
 
-This also writes `results/detailed.md` by default (customizable via `--detailed-output`).
+By default, reports are written per suite (for example `results/suites/literals/summary.md` and `results/suites/literals/detailed.md`).
 
 ### 5) View rendered markdown in browser
 
@@ -94,7 +95,7 @@ This also writes `results/detailed.md` by default (customizable via `--detailed-
 Then open:
 
 - `http://127.0.0.1:8000/` for the markdown index
-- `http://127.0.0.1:8000/view?path=results/summary.md` for a specific file
+- `http://127.0.0.1:8000/view?path=results/suites/literals/summary.md` for a specific file
 
 ## Checker configuration
 
