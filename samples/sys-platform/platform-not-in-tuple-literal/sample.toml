@@ -1,0 +1,5 @@
+id = "platform-not-in-tuple-literal"
+feature = "not in (tuple)"
+description = "Negative membership test against a tuple literal should narrow branch selection"
+expectation = "accept"
+tags = ["sys.platform", "conditional", "not in", "tuple"]

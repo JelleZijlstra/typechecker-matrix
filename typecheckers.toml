@@ -1,0 +1,17 @@
+# Command templates for each checker. Use {sample} as a placeholder for the sample path.
+
+[[checker]]
+name = "mypy"
+command = ["mypy", "{sample}"]
+
+[[checker]]
+name = "pyright"
+command = ["pyright", "{sample}"]
+
+[[checker]]
+name = "ty"
+command = ["ty", "check", "{sample}"]
+
+[[checker]]
+name = "pyrefly"
+command = ["pyrefly", "check", "{sample}"]

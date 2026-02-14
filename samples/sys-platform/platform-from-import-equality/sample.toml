@@ -1,0 +1,5 @@
+id = "platform-from-import-equality"
+feature = "from sys import platform"
+description = "Using 'from sys import platform' should preserve platform-guard narrowing"
+expectation = "accept"
+tags = ["sys.platform", "conditional", "from import"]

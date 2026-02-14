@@ -1,0 +1,5 @@
+id = "platform-import-alias-equality"
+feature = "import sys as other_name"
+description = "Using 'import sys as other_name' should preserve platform-guard narrowing"
+expectation = "accept"
+tags = ["sys.platform", "conditional", "import alias"]

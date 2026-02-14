@@ -1,0 +1,5 @@
+id = "platform-reverse-inequality-check"
+feature = "reverse !="
+description = "Reverse inequality order should preserve platform-guard narrowing"
+expectation = "accept"
+tags = ["sys.platform", "conditional", "reverse", "inequality"]

@@ -1,0 +1,5 @@
+id = "platform-not-in-set-literal"
+feature = "not in (set)"
+description = "Negative membership test against a set literal should narrow branch selection"
+expectation = "accept"
+tags = ["sys.platform", "conditional", "not in", "set"]

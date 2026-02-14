@@ -1,0 +1,5 @@
+id = "platform-in-set-literal"
+feature = "in (set)"
+description = "Membership test against a set literal should narrow branch selection"
+expectation = "accept"
+tags = ["sys.platform", "conditional", "in", "set"]

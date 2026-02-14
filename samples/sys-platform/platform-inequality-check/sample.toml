@@ -1,0 +1,5 @@
+id = "platform-inequality-check"
+feature = "!="
+description = "Inequality guard should still select the int-typed definition used after the conditional"
+expectation = "accept"
+tags = ["sys.platform", "conditional", "inequality"]

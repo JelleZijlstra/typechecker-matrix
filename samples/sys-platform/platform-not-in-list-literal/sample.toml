@@ -1,0 +1,5 @@
+id = "platform-not-in-list-literal"
+feature = "not in (list)"
+description = "Negative membership test against a list literal should narrow branch selection"
+expectation = "accept"
+tags = ["sys.platform", "conditional", "not in", "list"]

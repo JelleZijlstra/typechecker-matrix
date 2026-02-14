@@ -1,0 +1,5 @@
+id = "platform-method-check"
+feature = "startswith"
+description = "Method-based platform checks are a contrast case for post-conditional narrowing"
+expectation = "accept"
+tags = ["sys.platform", "conditional", "startswith"]

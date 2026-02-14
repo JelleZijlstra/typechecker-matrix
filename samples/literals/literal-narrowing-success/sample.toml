@@ -1,0 +1,5 @@
+id = "literal-narrowing-success"
+feature = "Literal narrowing"
+description = "Type checker understands Literal-based branch narrowing"
+expectation = "accept"
+tags = ["literals", "narrowing"]

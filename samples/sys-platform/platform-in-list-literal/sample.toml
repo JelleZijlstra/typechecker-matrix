@@ -1,0 +1,5 @@
+id = "platform-in-list-literal"
+feature = "in (list)"
+description = "Membership test against a list literal should narrow branch selection"
+expectation = "accept"
+tags = ["sys.platform", "conditional", "in", "list"]

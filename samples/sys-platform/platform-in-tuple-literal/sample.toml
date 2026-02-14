@@ -1,0 +1,5 @@
+id = "platform-in-tuple-literal"
+feature = "in (tuple)"
+description = "Membership test against a tuple literal should narrow branch selection"
+expectation = "accept"
+tags = ["sys.platform", "conditional", "in", "tuple"]

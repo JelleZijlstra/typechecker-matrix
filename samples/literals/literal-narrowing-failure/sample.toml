@@ -1,0 +1,5 @@
+id = "literal-narrowing-failure"
+feature = "Literal narrowing"
+description = "Reject incompatible assignment under Literal type"
+expectation = "reject"
+tags = ["literals", "errors"]

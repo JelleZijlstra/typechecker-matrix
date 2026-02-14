@@ -1,0 +1,5 @@
+id = "platform-equality-check"
+feature = "=="
+description = "Equality guard should select the int-typed definition that is used after the conditional"
+expectation = "accept"
+tags = ["sys.platform", "conditional", "equality"]

@@ -1,0 +1,5 @@
+id = "platform-disjunction-check"
+feature = "or"
+description = "Disjunction of platform equalities should select the int-typed definition used afterward"
+expectation = "accept"
+tags = ["sys.platform", "conditional", "or"]
