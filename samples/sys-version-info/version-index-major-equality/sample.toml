@@ -1,0 +1,5 @@
+id = "version-index-major-equality"
+feature = "[0] =="
+description = "Index-based major version check should preserve narrowing"
+expectation = "accept"
+tags = ["sys.version_info", "index", "major", "equality"]

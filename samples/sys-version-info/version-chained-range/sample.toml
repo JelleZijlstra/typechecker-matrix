@@ -1,0 +1,5 @@
+id = "version-chained-range"
+feature = "chained range"
+description = "Chained range comparison should preserve narrowing for the in-range branch"
+expectation = "accept"
+tags = ["sys.version_info", "comparison", "chained", "range"]

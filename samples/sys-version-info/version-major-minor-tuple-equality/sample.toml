@@ -1,0 +1,5 @@
+id = "version-major-minor-tuple-equality"
+feature = "(major, minor) =="
+description = "Tuple comparison of sys.version_info.major/minor should preserve narrowing"
+expectation = "accept"
+tags = ["sys.version_info", "tuple", "major", "minor", "equality"]

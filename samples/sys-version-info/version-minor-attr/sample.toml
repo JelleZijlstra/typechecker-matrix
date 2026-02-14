@@ -1,0 +1,5 @@
+id = "version-minor-attr"
+feature = ".minor =="
+description = "sys.version_info.minor equality should preserve narrowing"
+expectation = "accept"
+tags = ["sys.version_info", "attribute", "minor"]

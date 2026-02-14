@@ -1,0 +1,5 @@
+id = "version-reverse-slice-equality"
+feature = "reverse == slice"
+description = "Reverse equality order for version slice should preserve narrowing"
+expectation = "accept"
+tags = ["sys.version_info", "reverse", "slice", "equality"]

@@ -1,0 +1,5 @@
+id = "version-from-import-gte"
+feature = "from sys import version_info"
+description = "Using 'from sys import version_info' should preserve version-guard narrowing"
+expectation = "accept"
+tags = ["sys.version_info", "conditional", "from import"]

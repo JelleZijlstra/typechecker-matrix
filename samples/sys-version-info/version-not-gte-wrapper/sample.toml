@@ -1,0 +1,5 @@
+id = "version-not-gte-wrapper"
+feature = "not (>=)"
+description = "Negated version comparison should preserve narrowing in else branch"
+expectation = "accept"
+tags = ["sys.version_info", "negation", "comparison"]

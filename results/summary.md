@@ -1,36 +1,37 @@
 # Python Type Checker Feature Matrix
 
-Generated: 2026-02-14T18:31:09+00:00
+Generated: 2026-02-14T21:51:29+00:00
 
-Suites: sys-platform
+Suites: sys-version-info
 
 Legend: ✅ supported, ❌ unsupported, ⚪ unavailable, ⚠️ error
 
 | Feature | mypy | pyright | ty | pyrefly |
 | --- | --- | --- | --- | --- |
-| p = sys.platform | ❌ | ❌ | ✅ | ❌ |
-| TARGETS tuple | ❌ | ❌ | ❌ | ❌ |
-| or | ✅ | ✅ | ✅ | ✅ |
-| == | ✅ | ✅ | ✅ | ✅ |
-| from sys import platform | ❌ | ❌ | ✅ | ❌ |
+| chained range | ❌ | ❌ | ✅ | ❌ |
+| from sys import version_info as v | ❌ | ❌ | ✅ | ❌ |
+| from sys import version_info | ❌ | ❌ | ✅ | ❌ |
+| >= tuple | ✅ | ✅ | ✅ | ✅ |
+| >= tuple (5-part) | ❌ | ✅ | ❌ | ❌ |
+| >= tuple (3-part) | ❌ | ✅ | ❌ | ❌ |
 | import sys as other_name | ❌ | ✅ | ✅ | ❌ |
-| in (list) | ❌ | ❌ | ❌ | ❌ |
-| in (set) | ❌ | ❌ | ❌ | ❌ |
-| in (tuple) | ❌ | ❌ | ❌ | ❌ |
-| != | ✅ | ✅ | ✅ | ✅ |
-| startswith | ✅ | ❌ | ✅ | ✅ |
-| not (==) | ✅ | ✅ | ✅ | ✅ |
-| not in (list) | ❌ | ❌ | ❌ | ❌ |
-| not in (set) | ❌ | ❌ | ❌ | ❌ |
-| not in (tuple) | ❌ | ❌ | ❌ | ❌ |
-| reverse == | ❌ | ❌ | ✅ | ✅ |
-| reverse != | ❌ | ❌ | ✅ | ✅ |
+| in supported set | ❌ | ❌ | ❌ | ❌ |
+| [0] == | ✅ | ✅ | ✅ | ❌ |
+| local alias slice == | ❌ | ❌ | ✅ | ❌ |
+| < tuple | ✅ | ✅ | ✅ | ✅ |
+| .major == | ❌ | ❌ | ✅ | ❌ |
+| (major, minor) == | ❌ | ❌ | ✅ | ❌ |
+| .minor == | ❌ | ❌ | ✅ | ❌ |
+| not (>=) | ✅ | ✅ | ✅ | ✅ |
+| reverse <= tuple | ✅ | ❌ | ✅ | ✅ |
+| reverse == slice | ✅ | ❌ | ✅ | ❌ |
+| [:2] == tuple | ✅ | ❌ | ✅ | ❌ |
 
 ## Totals
 
 | Checker | ✅ supported | ❌ unsupported | ⚪ unavailable | ⚠️ error |
 | --- | --- | --- | --- | --- |
-| mypy | 5 | 12 | 0 | 0 |
-| pyright | 5 | 12 | 0 | 0 |
-| ty | 10 | 7 | 0 | 0 |
-| pyrefly | 7 | 10 | 0 | 0 |
+| mypy | 7 | 11 | 0 | 0 |
+| pyright | 7 | 11 | 0 | 0 |
+| ty | 15 | 3 | 0 | 0 |
+| pyrefly | 4 | 14 | 0 | 0 |

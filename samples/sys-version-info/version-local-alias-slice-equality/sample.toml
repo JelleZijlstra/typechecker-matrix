@@ -1,0 +1,5 @@
+id = "version-local-alias-slice-equality"
+feature = "local alias slice =="
+description = "Local alias of sys.version_info with slice equality should preserve narrowing"
+expectation = "accept"
+tags = ["sys.version_info", "alias", "slice", "equality"]

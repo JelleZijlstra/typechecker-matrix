@@ -1,0 +1,5 @@
+id = "version-in-supported-set"
+feature = "in supported set"
+description = "Membership in a set of supported major/minor tuples should preserve narrowing"
+expectation = "accept"
+tags = ["sys.version_info", "membership", "set", "slice"]

@@ -1,0 +1,5 @@
+id = "version-gte-current-tuple"
+feature = ">= tuple"
+description = "sys.version_info >= (3, 14) should preserve narrowing"
+expectation = "accept"
+tags = ["sys.version_info", "comparison", "tuple"]

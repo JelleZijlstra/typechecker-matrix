@@ -1,0 +1,5 @@
+id = "version-reverse-gte-tuple"
+feature = "reverse <= tuple"
+description = "Reverse comparator order (3, 14) <= sys.version_info should preserve narrowing"
+expectation = "accept"
+tags = ["sys.version_info", "comparison", "reverse", "tuple"]

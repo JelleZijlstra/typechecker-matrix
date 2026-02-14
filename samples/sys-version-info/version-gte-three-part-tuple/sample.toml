@@ -1,0 +1,5 @@
+id = "version-gte-three-part-tuple"
+feature = ">= tuple (3-part)"
+description = "sys.version_info >= (3, 14, 0) should preserve narrowing"
+expectation = "accept"
+tags = ["sys.version_info", "comparison", "tuple", "3-part"]
