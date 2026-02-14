@@ -1,6 +1,6 @@
 # Python Type Checker Detailed Report
 
-Generated: 2026-02-14T22:44:42+00:00
+Generated: 2026-02-14T23:00:41+00:00
 
 Suites: sys-platform
 
@@ -29,7 +29,7 @@ y: int = x
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `182`
+- Duration (ms): `155`
 - Command: `mypy samples/sys-platform/platform-alias-variable-equality/sample.py`
 
 #### stdout
@@ -49,7 +49,7 @@ Found 1 error in 1 file (checked 1 source file)
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `691`
+- Duration (ms): `458`
 - Command: `pyright samples/sys-platform/platform-alias-variable-equality/sample.py`
 
 #### stdout
@@ -74,7 +74,7 @@ Found 1 error in 1 file (checked 1 source file)
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `40`
+- Duration (ms): `17`
 - Command: `ty check samples/sys-platform/platform-alias-variable-equality/sample.py`
 
 #### stdout
@@ -93,7 +93,7 @@ All checks passed!
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `162`
+- Duration (ms): `108`
 - Command: `pyrefly check samples/sys-platform/platform-alias-variable-equality/sample.py`
 
 #### stdout
@@ -144,7 +144,7 @@ y: int = x
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `417`
+- Duration (ms): `152`
 - Command: `mypy samples/sys-platform/platform-constant-targets-tuple/sample.py`
 
 #### stdout
@@ -164,7 +164,7 @@ Found 1 error in 1 file (checked 1 source file)
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `1056`
+- Duration (ms): `438`
 - Command: `pyright samples/sys-platform/platform-constant-targets-tuple/sample.py`
 
 #### stdout
@@ -189,7 +189,7 @@ Found 1 error in 1 file (checked 1 source file)
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `148`
+- Duration (ms): `19`
 - Command: `ty check samples/sys-platform/platform-constant-targets-tuple/sample.py`
 
 #### stdout
@@ -220,7 +220,7 @@ Found 1 diagnostic
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `189`
+- Duration (ms): `85`
 - Command: `pyrefly check samples/sys-platform/platform-constant-targets-tuple/sample.py`
 
 #### stdout
@@ -270,7 +270,7 @@ y: int = x
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `317`
+- Duration (ms): `137`
 - Command: `mypy samples/sys-platform/platform-disjunction-check/sample.py`
 
 #### stdout
@@ -289,7 +289,7 @@ Success: no issues found in 1 source file
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `526`
+- Duration (ms): `430`
 - Command: `pyright samples/sys-platform/platform-disjunction-check/sample.py`
 
 #### stdout
@@ -308,7 +308,7 @@ Success: no issues found in 1 source file
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `19`
+- Duration (ms): `16`
 - Command: `ty check samples/sys-platform/platform-disjunction-check/sample.py`
 
 #### stdout
@@ -327,7 +327,7 @@ All checks passed!
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `97`
+- Duration (ms): `80`
 - Command: `pyrefly check samples/sys-platform/platform-disjunction-check/sample.py`
 
 #### stdout
@@ -366,7 +366,7 @@ y: int = x
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `159`
+- Duration (ms): `143`
 - Command: `mypy samples/sys-platform/platform-equality-check/sample.py`
 
 #### stdout
@@ -385,7 +385,7 @@ Success: no issues found in 1 source file
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `470`
+- Duration (ms): `451`
 - Command: `pyright samples/sys-platform/platform-equality-check/sample.py`
 
 #### stdout
@@ -404,7 +404,7 @@ Success: no issues found in 1 source file
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `18`
+- Duration (ms): `15`
 - Command: `ty check samples/sys-platform/platform-equality-check/sample.py`
 
 #### stdout
@@ -423,7 +423,7 @@ All checks passed!
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `88`
+- Duration (ms): `83`
 - Command: `pyrefly check samples/sys-platform/platform-equality-check/sample.py`
 
 #### stdout
@@ -462,7 +462,7 @@ y: int = x
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `150`
+- Duration (ms): `155`
 - Command: `mypy samples/sys-platform/platform-from-import-equality/sample.py`
 
 #### stdout
@@ -482,7 +482,7 @@ Found 1 error in 1 file (checked 1 source file)
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `481`
+- Duration (ms): `438`
 - Command: `pyright samples/sys-platform/platform-from-import-equality/sample.py`
 
 #### stdout
@@ -507,7 +507,7 @@ Found 1 error in 1 file (checked 1 source file)
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `19`
+- Duration (ms): `15`
 - Command: `ty check samples/sys-platform/platform-from-import-equality/sample.py`
 
 #### stdout
@@ -526,7 +526,7 @@ All checks passed!
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `87`
+- Duration (ms): `82`
 - Command: `pyrefly check samples/sys-platform/platform-from-import-equality/sample.py`
 
 #### stdout
@@ -576,7 +576,7 @@ y: int = x
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `152`
+- Duration (ms): `135`
 - Command: `mypy samples/sys-platform/platform-import-alias-equality/sample.py`
 
 #### stdout
@@ -596,7 +596,7 @@ Found 1 error in 1 file (checked 1 source file)
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `476`
+- Duration (ms): `435`
 - Command: `pyright samples/sys-platform/platform-import-alias-equality/sample.py`
 
 #### stdout
@@ -615,7 +615,7 @@ Found 1 error in 1 file (checked 1 source file)
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `17`
+- Duration (ms): `15`
 - Command: `ty check samples/sys-platform/platform-import-alias-equality/sample.py`
 
 #### stdout
@@ -634,7 +634,7 @@ All checks passed!
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `87`
+- Duration (ms): `81`
 - Command: `pyrefly check samples/sys-platform/platform-import-alias-equality/sample.py`
 
 #### stdout
@@ -684,7 +684,7 @@ y: int = x
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `164`
+- Duration (ms): `134`
 - Command: `mypy samples/sys-platform/platform-in-list-literal/sample.py`
 
 #### stdout
@@ -704,7 +704,7 @@ Found 1 error in 1 file (checked 1 source file)
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `478`
+- Duration (ms): `445`
 - Command: `pyright samples/sys-platform/platform-in-list-literal/sample.py`
 
 #### stdout
@@ -729,7 +729,7 @@ Found 1 error in 1 file (checked 1 source file)
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `25`
+- Duration (ms): `18`
 - Command: `ty check samples/sys-platform/platform-in-list-literal/sample.py`
 
 #### stdout
@@ -760,7 +760,7 @@ Found 1 diagnostic
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `98`
+- Duration (ms): `82`
 - Command: `pyrefly check samples/sys-platform/platform-in-list-literal/sample.py`
 
 #### stdout
@@ -810,7 +810,7 @@ y: int = x
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `180`
+- Duration (ms): `135`
 - Command: `mypy samples/sys-platform/platform-in-set-literal/sample.py`
 
 #### stdout
@@ -830,7 +830,7 @@ Found 1 error in 1 file (checked 1 source file)
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `541`
+- Duration (ms): `434`
 - Command: `pyright samples/sys-platform/platform-in-set-literal/sample.py`
 
 #### stdout
@@ -855,7 +855,7 @@ Found 1 error in 1 file (checked 1 source file)
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `21`
+- Duration (ms): `19`
 - Command: `ty check samples/sys-platform/platform-in-set-literal/sample.py`
 
 #### stdout
@@ -886,7 +886,7 @@ Found 1 diagnostic
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `102`
+- Duration (ms): `83`
 - Command: `pyrefly check samples/sys-platform/platform-in-set-literal/sample.py`
 
 #### stdout
@@ -936,7 +936,7 @@ y: int = x
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `169`
+- Duration (ms): `134`
 - Command: `mypy samples/sys-platform/platform-in-tuple-literal/sample.py`
 
 #### stdout
@@ -956,7 +956,7 @@ Found 1 error in 1 file (checked 1 source file)
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `500`
+- Duration (ms): `426`
 - Command: `pyright samples/sys-platform/platform-in-tuple-literal/sample.py`
 
 #### stdout
@@ -981,7 +981,7 @@ Found 1 error in 1 file (checked 1 source file)
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `19`
+- Duration (ms): `16`
 - Command: `ty check samples/sys-platform/platform-in-tuple-literal/sample.py`
 
 #### stdout
@@ -1012,7 +1012,7 @@ Found 1 diagnostic
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `89`
+- Duration (ms): `81`
 - Command: `pyrefly check samples/sys-platform/platform-in-tuple-literal/sample.py`
 
 #### stdout
@@ -1062,7 +1062,7 @@ y: int = x
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `152`
+- Duration (ms): `135`
 - Command: `mypy samples/sys-platform/platform-inequality-check/sample.py`
 
 #### stdout
@@ -1081,7 +1081,7 @@ Success: no issues found in 1 source file
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `479`
+- Duration (ms): `450`
 - Command: `pyright samples/sys-platform/platform-inequality-check/sample.py`
 
 #### stdout
@@ -1119,7 +1119,7 @@ All checks passed!
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `88`
+- Duration (ms): `82`
 - Command: `pyrefly check samples/sys-platform/platform-inequality-check/sample.py`
 
 #### stdout
@@ -1158,7 +1158,7 @@ y: int = x
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `147`
+- Duration (ms): `135`
 - Command: `mypy samples/sys-platform/platform-method-check/sample.py`
 
 #### stdout
@@ -1177,7 +1177,7 @@ Success: no issues found in 1 source file
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `483`
+- Duration (ms): `517`
 - Command: `pyright samples/sys-platform/platform-method-check/sample.py`
 
 #### stdout
@@ -1202,7 +1202,7 @@ Success: no issues found in 1 source file
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `20`
+- Duration (ms): `18`
 - Command: `ty check samples/sys-platform/platform-method-check/sample.py`
 
 #### stdout
@@ -1221,7 +1221,7 @@ All checks passed!
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `86`
+- Duration (ms): `84`
 - Command: `pyrefly check samples/sys-platform/platform-method-check/sample.py`
 
 #### stdout
@@ -1260,7 +1260,7 @@ y: int = x
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `147`
+- Duration (ms): `135`
 - Command: `mypy samples/sys-platform/platform-not-equality-wrapper/sample.py`
 
 #### stdout
@@ -1279,7 +1279,7 @@ Success: no issues found in 1 source file
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `444`
+- Duration (ms): `457`
 - Command: `pyright samples/sys-platform/platform-not-equality-wrapper/sample.py`
 
 #### stdout
@@ -1298,7 +1298,7 @@ Success: no issues found in 1 source file
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `18`
+- Duration (ms): `17`
 - Command: `ty check samples/sys-platform/platform-not-equality-wrapper/sample.py`
 
 #### stdout
@@ -1317,7 +1317,7 @@ All checks passed!
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `92`
+- Duration (ms): `85`
 - Command: `pyrefly check samples/sys-platform/platform-not-equality-wrapper/sample.py`
 
 #### stdout
@@ -1377,7 +1377,7 @@ Found 2 errors in 1 file (checked 1 source file)
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `522`
+- Duration (ms): `457`
 - Command: `pyright samples/sys-platform/platform-not-in-list-literal/sample.py`
 
 #### stdout
@@ -1400,7 +1400,7 @@ Found 2 errors in 1 file (checked 1 source file)
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `29`
+- Duration (ms): `16`
 - Command: `ty check samples/sys-platform/platform-not-in-list-literal/sample.py`
 
 #### stdout
@@ -1431,7 +1431,7 @@ Found 1 diagnostic
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `179`
+- Duration (ms): `83`
 - Command: `pyrefly check samples/sys-platform/platform-not-in-list-literal/sample.py`
 
 #### stdout
@@ -1481,7 +1481,7 @@ y: int = x
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `158`
+- Duration (ms): `135`
 - Command: `mypy samples/sys-platform/platform-not-in-set-literal/sample.py`
 
 #### stdout
@@ -1502,7 +1502,7 @@ Found 2 errors in 1 file (checked 1 source file)
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `498`
+- Duration (ms): `450`
 - Command: `pyright samples/sys-platform/platform-not-in-set-literal/sample.py`
 
 #### stdout
@@ -1525,7 +1525,7 @@ Found 2 errors in 1 file (checked 1 source file)
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `19`
+- Duration (ms): `16`
 - Command: `ty check samples/sys-platform/platform-not-in-set-literal/sample.py`
 
 #### stdout
@@ -1556,7 +1556,7 @@ Found 1 diagnostic
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `88`
+- Duration (ms): `82`
 - Command: `pyrefly check samples/sys-platform/platform-not-in-set-literal/sample.py`
 
 #### stdout
@@ -1606,7 +1606,7 @@ y: int = x
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `147`
+- Duration (ms): `135`
 - Command: `mypy samples/sys-platform/platform-not-in-tuple-literal/sample.py`
 
 #### stdout
@@ -1627,7 +1627,7 @@ Found 2 errors in 1 file (checked 1 source file)
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `474`
+- Duration (ms): `449`
 - Command: `pyright samples/sys-platform/platform-not-in-tuple-literal/sample.py`
 
 #### stdout
@@ -1650,7 +1650,7 @@ Found 2 errors in 1 file (checked 1 source file)
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `18`
+- Duration (ms): `17`
 - Command: `ty check samples/sys-platform/platform-not-in-tuple-literal/sample.py`
 
 #### stdout
@@ -1681,7 +1681,7 @@ Found 1 diagnostic
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `88`
+- Duration (ms): `81`
 - Command: `pyrefly check samples/sys-platform/platform-not-in-tuple-literal/sample.py`
 
 #### stdout
@@ -1731,7 +1731,7 @@ y: int = x
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `145`
+- Duration (ms): `135`
 - Command: `mypy samples/sys-platform/platform-reverse-equality-check/sample.py`
 
 #### stdout
@@ -1751,7 +1751,7 @@ Found 1 error in 1 file (checked 1 source file)
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `480`
+- Duration (ms): `431`
 - Command: `pyright samples/sys-platform/platform-reverse-equality-check/sample.py`
 
 #### stdout
@@ -1776,7 +1776,7 @@ Found 1 error in 1 file (checked 1 source file)
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `17`
+- Duration (ms): `15`
 - Command: `ty check samples/sys-platform/platform-reverse-equality-check/sample.py`
 
 #### stdout
@@ -1795,7 +1795,7 @@ All checks passed!
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `91`
+- Duration (ms): `82`
 - Command: `pyrefly check samples/sys-platform/platform-reverse-equality-check/sample.py`
 
 #### stdout
@@ -1834,7 +1834,7 @@ y: int = x
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `155`
+- Duration (ms): `135`
 - Command: `mypy samples/sys-platform/platform-reverse-inequality-check/sample.py`
 
 #### stdout
@@ -1855,7 +1855,7 @@ Found 2 errors in 1 file (checked 1 source file)
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `461`
+- Duration (ms): `422`
 - Command: `pyright samples/sys-platform/platform-reverse-inequality-check/sample.py`
 
 #### stdout
@@ -1878,7 +1878,7 @@ Found 2 errors in 1 file (checked 1 source file)
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `18`
+- Duration (ms): `15`
 - Command: `ty check samples/sys-platform/platform-reverse-inequality-check/sample.py`
 
 #### stdout
@@ -1897,7 +1897,7 @@ All checks passed!
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `86`
+- Duration (ms): `81`
 - Command: `pyrefly check samples/sys-platform/platform-reverse-inequality-check/sample.py`
 
 #### stdout

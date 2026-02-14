@@ -1,6 +1,6 @@
 # Python Type Checker Detailed Report
 
-Generated: 2026-02-14T22:44:57+00:00
+Generated: 2026-02-14T23:00:52+00:00
 
 Suites: sys-version-info
 
@@ -28,7 +28,7 @@ y: int = x
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `147`
+- Duration (ms): `165`
 - Command: `mypy samples/sys-version-info/version-chained-range/sample.py`
 
 #### stdout
@@ -48,7 +48,7 @@ Found 1 error in 1 file (checked 1 source file)
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `470`
+- Duration (ms): `436`
 - Command: `pyright samples/sys-version-info/version-chained-range/sample.py`
 
 #### stdout
@@ -73,7 +73,7 @@ Found 1 error in 1 file (checked 1 source file)
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `18`
+- Duration (ms): `17`
 - Command: `ty check samples/sys-version-info/version-chained-range/sample.py`
 
 #### stdout
@@ -92,7 +92,7 @@ All checks passed!
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `105`
+- Duration (ms): `104`
 - Command: `pyrefly check samples/sys-version-info/version-chained-range/sample.py`
 
 #### stdout
@@ -142,7 +142,7 @@ y: int = x
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `174`
+- Duration (ms): `151`
 - Command: `mypy samples/sys-version-info/version-from-import-alias-gte/sample.py`
 
 #### stdout
@@ -162,7 +162,7 @@ Found 1 error in 1 file (checked 1 source file)
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `586`
+- Duration (ms): `567`
 - Command: `pyright samples/sys-version-info/version-from-import-alias-gte/sample.py`
 
 #### stdout
@@ -187,7 +187,7 @@ Found 1 error in 1 file (checked 1 source file)
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `19`
+- Duration (ms): `18`
 - Command: `ty check samples/sys-version-info/version-from-import-alias-gte/sample.py`
 
 #### stdout
@@ -206,7 +206,7 @@ All checks passed!
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `94`
+- Duration (ms): `83`
 - Command: `pyrefly check samples/sys-version-info/version-from-import-alias-gte/sample.py`
 
 #### stdout
@@ -256,7 +256,7 @@ y: int = x
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `153`
+- Duration (ms): `135`
 - Command: `mypy samples/sys-version-info/version-from-import-gte/sample.py`
 
 #### stdout
@@ -276,7 +276,7 @@ Found 1 error in 1 file (checked 1 source file)
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `539`
+- Duration (ms): `459`
 - Command: `pyright samples/sys-version-info/version-from-import-gte/sample.py`
 
 #### stdout
@@ -301,7 +301,7 @@ Found 1 error in 1 file (checked 1 source file)
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `19`
+- Duration (ms): `16`
 - Command: `ty check samples/sys-version-info/version-from-import-gte/sample.py`
 
 #### stdout
@@ -320,7 +320,7 @@ All checks passed!
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `103`
+- Duration (ms): `84`
 - Command: `pyrefly check samples/sys-version-info/version-from-import-gte/sample.py`
 
 #### stdout
@@ -370,7 +370,7 @@ y: int = x
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `172`
+- Duration (ms): `149`
 - Command: `mypy samples/sys-version-info/version-gte-current-tuple/sample.py`
 
 #### stdout
@@ -389,7 +389,7 @@ Success: no issues found in 1 source file
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `501`
+- Duration (ms): `436`
 - Command: `pyright samples/sys-version-info/version-gte-current-tuple/sample.py`
 
 #### stdout
@@ -408,7 +408,7 @@ Success: no issues found in 1 source file
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `19`
+- Duration (ms): `15`
 - Command: `ty check samples/sys-version-info/version-gte-current-tuple/sample.py`
 
 #### stdout
@@ -427,7 +427,7 @@ All checks passed!
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `92`
+- Duration (ms): `82`
 - Command: `pyrefly check samples/sys-version-info/version-gte-current-tuple/sample.py`
 
 #### stdout
@@ -466,7 +466,7 @@ y: int = x
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `168`
+- Duration (ms): `149`
 - Command: `mypy samples/sys-version-info/version-gte-five-part-tuple/sample.py`
 
 #### stdout
@@ -486,7 +486,7 @@ Found 1 error in 1 file (checked 1 source file)
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `751`
+- Duration (ms): `450`
 - Command: `pyright samples/sys-version-info/version-gte-five-part-tuple/sample.py`
 
 #### stdout
@@ -505,7 +505,7 @@ Found 1 error in 1 file (checked 1 source file)
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `250`
+- Duration (ms): `25`
 - Command: `ty check samples/sys-version-info/version-gte-five-part-tuple/sample.py`
 
 #### stdout
@@ -536,7 +536,7 @@ Found 1 diagnostic
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `364`
+- Duration (ms): `83`
 - Command: `pyrefly check samples/sys-version-info/version-gte-five-part-tuple/sample.py`
 
 #### stdout
@@ -580,7 +580,7 @@ y: int = x
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `308`
+- Duration (ms): `134`
 - Command: `mypy samples/sys-version-info/version-gte-three-part-tuple/sample.py`
 
 #### stdout
@@ -600,7 +600,7 @@ Found 1 error in 1 file (checked 1 source file)
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `543`
+- Duration (ms): `448`
 - Command: `pyright samples/sys-version-info/version-gte-three-part-tuple/sample.py`
 
 #### stdout
@@ -619,7 +619,7 @@ Found 1 error in 1 file (checked 1 source file)
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `58`
+- Duration (ms): `18`
 - Command: `ty check samples/sys-version-info/version-gte-three-part-tuple/sample.py`
 
 #### stdout
@@ -650,7 +650,7 @@ Found 1 diagnostic
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `116`
+- Duration (ms): `83`
 - Command: `pyrefly check samples/sys-version-info/version-gte-three-part-tuple/sample.py`
 
 #### stdout
@@ -694,7 +694,7 @@ y: int = x
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `206`
+- Duration (ms): `141`
 - Command: `mypy samples/sys-version-info/version-import-alias-gte/sample.py`
 
 #### stdout
@@ -714,7 +714,7 @@ Found 1 error in 1 file (checked 1 source file)
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `719`
+- Duration (ms): `432`
 - Command: `pyright samples/sys-version-info/version-import-alias-gte/sample.py`
 
 #### stdout
@@ -733,7 +733,7 @@ Found 1 error in 1 file (checked 1 source file)
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `305`
+- Duration (ms): `15`
 - Command: `ty check samples/sys-version-info/version-import-alias-gte/sample.py`
 
 #### stdout
@@ -752,7 +752,7 @@ All checks passed!
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `110`
+- Duration (ms): `82`
 - Command: `pyrefly check samples/sys-version-info/version-import-alias-gte/sample.py`
 
 #### stdout
@@ -802,7 +802,7 @@ y: int = x
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `215`
+- Duration (ms): `138`
 - Command: `mypy samples/sys-version-info/version-in-supported-set/sample.py`
 
 #### stdout
@@ -822,7 +822,7 @@ Found 1 error in 1 file (checked 1 source file)
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `513`
+- Duration (ms): `430`
 - Command: `pyright samples/sys-version-info/version-in-supported-set/sample.py`
 
 #### stdout
@@ -847,7 +847,7 @@ Found 1 error in 1 file (checked 1 source file)
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `24`
+- Duration (ms): `19`
 - Command: `ty check samples/sys-version-info/version-in-supported-set/sample.py`
 
 #### stdout
@@ -878,7 +878,7 @@ Found 1 diagnostic
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `94`
+- Duration (ms): `83`
 - Command: `pyrefly check samples/sys-version-info/version-in-supported-set/sample.py`
 
 #### stdout
@@ -928,7 +928,7 @@ y: int = x
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `152`
+- Duration (ms): `135`
 - Command: `mypy samples/sys-version-info/version-index-major-equality/sample.py`
 
 #### stdout
@@ -947,7 +947,7 @@ Success: no issues found in 1 source file
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `507`
+- Duration (ms): `462`
 - Command: `pyright samples/sys-version-info/version-index-major-equality/sample.py`
 
 #### stdout
@@ -966,7 +966,7 @@ Success: no issues found in 1 source file
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `19`
+- Duration (ms): `15`
 - Command: `ty check samples/sys-version-info/version-index-major-equality/sample.py`
 
 #### stdout
@@ -985,7 +985,7 @@ All checks passed!
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `92`
+- Duration (ms): `83`
 - Command: `pyrefly check samples/sys-version-info/version-index-major-equality/sample.py`
 
 #### stdout
@@ -1036,7 +1036,7 @@ y: int = x
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `149`
+- Duration (ms): `137`
 - Command: `mypy samples/sys-version-info/version-local-alias-slice-equality/sample.py`
 
 #### stdout
@@ -1056,7 +1056,7 @@ Found 1 error in 1 file (checked 1 source file)
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `507`
+- Duration (ms): `447`
 - Command: `pyright samples/sys-version-info/version-local-alias-slice-equality/sample.py`
 
 #### stdout
@@ -1081,7 +1081,7 @@ Found 1 error in 1 file (checked 1 source file)
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `19`
+- Duration (ms): `16`
 - Command: `ty check samples/sys-version-info/version-local-alias-slice-equality/sample.py`
 
 #### stdout
@@ -1100,7 +1100,7 @@ All checks passed!
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `88`
+- Duration (ms): `82`
 - Command: `pyrefly check samples/sys-version-info/version-local-alias-slice-equality/sample.py`
 
 #### stdout
@@ -1150,7 +1150,7 @@ y: int = x
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `151`
+- Duration (ms): `135`
 - Command: `mypy samples/sys-version-info/version-lt-next-minor/sample.py`
 
 #### stdout
@@ -1169,7 +1169,7 @@ Success: no issues found in 1 source file
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `481`
+- Duration (ms): `443`
 - Command: `pyright samples/sys-version-info/version-lt-next-minor/sample.py`
 
 #### stdout
@@ -1207,7 +1207,7 @@ All checks passed!
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `87`
+- Duration (ms): `95`
 - Command: `pyrefly check samples/sys-version-info/version-lt-next-minor/sample.py`
 
 #### stdout
@@ -1246,7 +1246,7 @@ y: int = x
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `145`
+- Duration (ms): `183`
 - Command: `mypy samples/sys-version-info/version-major-attr/sample.py`
 
 #### stdout
@@ -1266,7 +1266,7 @@ Found 1 error in 1 file (checked 1 source file)
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `473`
+- Duration (ms): `696`
 - Command: `pyright samples/sys-version-info/version-major-attr/sample.py`
 
 #### stdout
@@ -1291,7 +1291,7 @@ Found 1 error in 1 file (checked 1 source file)
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `17`
+- Duration (ms): `44`
 - Command: `ty check samples/sys-version-info/version-major-attr/sample.py`
 
 #### stdout
@@ -1310,7 +1310,7 @@ All checks passed!
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `87`
+- Duration (ms): `117`
 - Command: `pyrefly check samples/sys-version-info/version-major-attr/sample.py`
 
 #### stdout
@@ -1360,7 +1360,7 @@ y: int = x
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `147`
+- Duration (ms): `334`
 - Command: `mypy samples/sys-version-info/version-major-minor-tuple-equality/sample.py`
 
 #### stdout
@@ -1380,7 +1380,7 @@ Found 1 error in 1 file (checked 1 source file)
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `508`
+- Duration (ms): `481`
 - Command: `pyright samples/sys-version-info/version-major-minor-tuple-equality/sample.py`
 
 #### stdout
@@ -1405,7 +1405,7 @@ Found 1 error in 1 file (checked 1 source file)
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `21`
+- Duration (ms): `16`
 - Command: `ty check samples/sys-version-info/version-major-minor-tuple-equality/sample.py`
 
 #### stdout
@@ -1424,7 +1424,7 @@ All checks passed!
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `89`
+- Duration (ms): `81`
 - Command: `pyrefly check samples/sys-version-info/version-major-minor-tuple-equality/sample.py`
 
 #### stdout
@@ -1474,7 +1474,7 @@ y: int = x
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `149`
+- Duration (ms): `135`
 - Command: `mypy samples/sys-version-info/version-minor-attr/sample.py`
 
 #### stdout
@@ -1494,7 +1494,7 @@ Found 1 error in 1 file (checked 1 source file)
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `480`
+- Duration (ms): `430`
 - Command: `pyright samples/sys-version-info/version-minor-attr/sample.py`
 
 #### stdout
@@ -1519,7 +1519,7 @@ Found 1 error in 1 file (checked 1 source file)
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `18`
+- Duration (ms): `15`
 - Command: `ty check samples/sys-version-info/version-minor-attr/sample.py`
 
 #### stdout
@@ -1538,7 +1538,7 @@ All checks passed!
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `86`
+- Duration (ms): `83`
 - Command: `pyrefly check samples/sys-version-info/version-minor-attr/sample.py`
 
 #### stdout
@@ -1588,7 +1588,7 @@ y: int = x
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `149`
+- Duration (ms): `137`
 - Command: `mypy samples/sys-version-info/version-not-gte-wrapper/sample.py`
 
 #### stdout
@@ -1607,7 +1607,7 @@ Success: no issues found in 1 source file
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `477`
+- Duration (ms): `447`
 - Command: `pyright samples/sys-version-info/version-not-gte-wrapper/sample.py`
 
 #### stdout
@@ -1626,7 +1626,7 @@ Success: no issues found in 1 source file
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `17`
+- Duration (ms): `16`
 - Command: `ty check samples/sys-version-info/version-not-gte-wrapper/sample.py`
 
 #### stdout
@@ -1684,7 +1684,7 @@ y: int = x
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `165`
+- Duration (ms): `155`
 - Command: `mypy samples/sys-version-info/version-reverse-gte-tuple/sample.py`
 
 #### stdout
@@ -1703,7 +1703,7 @@ Success: no issues found in 1 source file
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `480`
+- Duration (ms): `545`
 - Command: `pyright samples/sys-version-info/version-reverse-gte-tuple/sample.py`
 
 #### stdout
@@ -1728,7 +1728,7 @@ Success: no issues found in 1 source file
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `20`
+- Duration (ms): `46`
 - Command: `ty check samples/sys-version-info/version-reverse-gte-tuple/sample.py`
 
 #### stdout
@@ -1747,7 +1747,7 @@ All checks passed!
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `88`
+- Duration (ms): `125`
 - Command: `pyrefly check samples/sys-version-info/version-reverse-gte-tuple/sample.py`
 
 #### stdout
@@ -1786,7 +1786,7 @@ y: int = x
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `154`
+- Duration (ms): `245`
 - Command: `mypy samples/sys-version-info/version-reverse-slice-equality/sample.py`
 
 #### stdout
@@ -1805,7 +1805,7 @@ Success: no issues found in 1 source file
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `527`
+- Duration (ms): `491`
 - Command: `pyright samples/sys-version-info/version-reverse-slice-equality/sample.py`
 
 #### stdout
@@ -1830,7 +1830,7 @@ Success: no issues found in 1 source file
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `23`
+- Duration (ms): `19`
 - Command: `ty check samples/sys-version-info/version-reverse-slice-equality/sample.py`
 
 #### stdout
@@ -1849,7 +1849,7 @@ All checks passed!
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `90`
+- Duration (ms): `85`
 - Command: `pyrefly check samples/sys-version-info/version-reverse-slice-equality/sample.py`
 
 #### stdout
@@ -1899,7 +1899,7 @@ y: int = x
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `150`
+- Duration (ms): `143`
 - Command: `mypy samples/sys-version-info/version-slice-equality/sample.py`
 
 #### stdout
@@ -1918,7 +1918,7 @@ Success: no issues found in 1 source file
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `516`
+- Duration (ms): `446`
 - Command: `pyright samples/sys-version-info/version-slice-equality/sample.py`
 
 #### stdout
@@ -1943,7 +1943,7 @@ Success: no issues found in 1 source file
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `20`
+- Duration (ms): `16`
 - Command: `ty check samples/sys-version-info/version-slice-equality/sample.py`
 
 #### stdout
@@ -1962,7 +1962,7 @@ All checks passed!
 
 - Status: `unsupported`
 - Return code: `1`
-- Duration (ms): `91`
+- Duration (ms): `82`
 - Command: `pyrefly check samples/sys-version-info/version-slice-equality/sample.py`
 
 #### stdout

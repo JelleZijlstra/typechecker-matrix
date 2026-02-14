@@ -1,6 +1,6 @@
 # Python Type Checker Detailed Report
 
-Generated: 2026-02-14T22:44:40+00:00
+Generated: 2026-02-14T23:00:39+00:00
 
 Suites: literals
 
@@ -23,7 +23,7 @@ x: Literal["a"] = "b"
 
 - Status: `supported`
 - Return code: `1`
-- Duration (ms): `326`
+- Duration (ms): `275`
 - Command: `mypy samples/literals/literal-narrowing-failure/sample.py`
 
 #### stdout
@@ -43,7 +43,7 @@ Found 1 error in 1 file (checked 1 source file)
 
 - Status: `supported`
 - Return code: `1`
-- Duration (ms): `650`
+- Duration (ms): `531`
 - Command: `pyright samples/literals/literal-narrowing-failure/sample.py`
 
 #### stdout
@@ -65,7 +65,7 @@ Found 1 error in 1 file (checked 1 source file)
 
 - Status: `supported`
 - Return code: `1`
-- Duration (ms): `66`
+- Duration (ms): `41`
 - Command: `ty check samples/literals/literal-narrowing-failure/sample.py`
 
 #### stdout
@@ -96,7 +96,7 @@ Found 1 diagnostic
 
 - Status: `supported`
 - Return code: `1`
-- Duration (ms): `179`
+- Duration (ms): `108`
 - Command: `pyrefly check samples/literals/literal-narrowing-failure/sample.py`
 
 #### stdout
@@ -139,7 +139,7 @@ def f(x: Literal["a", "b"]) -> int:
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `176`
+- Duration (ms): `139`
 - Command: `mypy samples/literals/literal-narrowing-success/sample.py`
 
 #### stdout
@@ -177,7 +177,7 @@ Success: no issues found in 1 source file
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `17`
+- Duration (ms): `16`
 - Command: `ty check samples/literals/literal-narrowing-success/sample.py`
 
 #### stdout
@@ -196,7 +196,7 @@ All checks passed!
 
 - Status: `supported`
 - Return code: `0`
-- Duration (ms): `86`
+- Duration (ms): `88`
 - Command: `pyrefly check samples/literals/literal-narrowing-success/sample.py`
 
 #### stdout
