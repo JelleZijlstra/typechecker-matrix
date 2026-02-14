@@ -1,0 +1,5 @@
+id = "platform-constant-targets-tuple"
+feature = "TARGETS tuple"
+description = "Membership check against a named tuple constant should preserve narrowing"
+expectation = "accept"
+tags = ["sys.platform", "conditional", "constant", "tuple"]

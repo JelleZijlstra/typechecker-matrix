@@ -1,0 +1,5 @@
+id = "platform-not-equality-wrapper"
+feature = "not (==)"
+description = "Negated equality expression should preserve narrowing in the else branch"
+expectation = "accept"
+tags = ["sys.platform", "conditional", "negation"]

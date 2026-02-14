@@ -1,0 +1,5 @@
+id = "platform-alias-variable-equality"
+feature = "p = sys.platform"
+description = "A local alias of sys.platform should preserve equality-guard narrowing"
+expectation = "accept"
+tags = ["sys.platform", "conditional", "alias variable"]
